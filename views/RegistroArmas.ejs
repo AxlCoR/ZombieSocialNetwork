@@ -1,0 +1,25 @@
+<%include _header%>
+<h3>REGISTRAR ARMAS</h3>
+
+<form action="/RegistroArmas" method="post">
+<div class="form-group">
+    <input name="descripcion" type="text" class="form-control"
+    placeholder="Descripcion" required autofocus>
+</div>
+<div>
+    <input name="categoria" type="text" class="form-control" placeholder="Categoria" required>
+</div>
+<br>
+<div>
+    <input name="fuerza" type="text" class="form-control" placeholder="fuerza" required>
+</div>
+<br>
+<div>
+    <input name="municiones" type="text" class="form-control" placeholder="Municiones" required>
+</div>
+<br>
+<div>
+<br>
+<input type="submit" value="Registrarse" class="btn btn-primary btn-block">
+</form>
+<%include _footer%>
