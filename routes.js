@@ -8,10 +8,7 @@ var acl = require('express-acl')
 var router = express.Router();
 
 acl.config({
-    baseUrl:"/",
-    defaultRole:'invitado',
-    decodedObjectName:'zombie',
-    roleSearchPath:'zombie.role'
+    defaultRole:'invitado'
 })
 
 router.use(acl.authorize);
